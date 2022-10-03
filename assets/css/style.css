@@ -1,112 +1,158 @@
-body {
-    text-align: center;
-    font-family: 'Langar', cursive;
-    background: url("/assets/img/background.jpg");
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100&display=swap');
 
-#morpion {
-    width: 320px;
-    height: 320px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 10px auto;
+body {
+    background-color: rgba(255, 255, 255, 0.68);
+    color: #3a3a3a;
+    font-family: 'Noto Sans Mono', monospace;
 }
 
 h1 {
-    font-size: 160%;
-    font-weight: bold;
-    background: white;
-    width: 15%;
+    font-size: 37px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+
+}
+.corpus {
+    width: 80%;
     margin: auto;
-    border-radius: 100%;
+    background-color: #eeeded;
+    padding: 30px;
+    box-shadow: 5px 5px 50px 12px gray;
+    border-radius: 20px;
 }
 
-button {
-    width: 15%;
-    font-size: 160%;
-    font-weight: bold;
-    border-radius: 100%;
+a {
+    color: rgba(0, 25, 255, 0.5);
+    text-decoration: none;
 }
 
-.case {
-    width: 30%;
-    height: 33%;
-    border: 5px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 550%;
+header {
+    width: 85%;
+    margin: 10px auto;
 }
 
-#retryContainer, #winCounter, #win {
-    padding: 10px;
-    display: none;
+#head {
+    border-top: dotted 4px gray;
+    border-bottom: dotted 4px gray;
+    height: 165px;
+    margin: 10px auto;
+    background-color: #eeeded;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px 12px gray;
+    width: 100%;
 }
 
-#winCounter {
-    font-size: 120%;
-    font-weight: bold;
-    background: white;
-    width: 30%;
-    margin: auto;
-    border-radius: 100%;
+header div {
+    display: inline-block;
+    width: 40%;
+    margin-left: 20px;
 }
 
-#win {
-    font-size: 120%;
-    font-weight: bold;
-    background: white;
-    width: 30%;
-    margin: auto;
-    border-radius: 100%;
+header div p {
+    float: right;
+    width: 40%;
+    margin: auto auto;
 }
 
-.case:hover {
-    cursor: pointer;
+#objectif {
+    border-top: dotted 4px gray;
+    margin: 5px;
 }
 
-#leftTop {
-    border-top: none;
-    border-left: none;
+#objectif h2 {
+    text-align: center;
+
 }
 
-#middleTop {
-    border-top: none;
-    border-left: none;
+#parcours {
+    border-top: dotted 4px gray;
+    border-bottom: dotted 4px gray;
+    margin: 5px;
 }
 
-#rightTop {
-    border-top: none;
-    border-right: none;
-    border-left: none;
-}
-
-#leftMiddle {
+.info h3 {
     border: none;
 }
 
-#middleMiddle {
-    border-top: none;
-    border-bottom: none;
+#parcours h2 {
+    text-align: center;
 }
 
-#rightMiddle {
+#parcours h3 {
+    display: block;
+    width: 100%;
+}
+
+.experience {
+    width: 100%;
+    height: 200px;
+}
+
+.experience > h3 {
     border: none;
 }
 
-#leftBottom {
-    border-left: none;
-    border-bottom: none;
+.info {
+    display: inline-block;
+    float: left;
+    border-right: 1px solid gray;
+    width: 20%;
 }
 
-#middleBottom {
-    border-bottom: none;
-    border-left: none;
+.description {
+    display: inline-block;
+    float: right;
+    width: 76%;
 }
 
-#rightBottom {
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
+#competences, #langue, #interet {
+    width: 30%;
+    display: inline-block;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 20px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: top;
+}
+
+#foot_block {
+    margin-top: 25px;
+    margin-left: 60px;
+}
+
+li {
+    text-align: left;
+    margin-left: 30px;
+}
+
+#formation {
+    border-bottom: dotted 4px gray;
+    height: 400px;
+}
+
+#formation > h2 {
+    text-align: center;
+}
+
+.diplome {
+    height: 100px;
+}
+
+.diplome > h3 {
+    float: left;
+    width: 32%;
+    border-right: 1px solid gray;
+}
+
+.diplome > p {
+    float: right;
+    width: 64%;
+    text-align: right;
 }
